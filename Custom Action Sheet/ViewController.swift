@@ -9,17 +9,37 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let custom  = menu()
+    
+    lazy var sample:UILabel = {
+        let label = UILabel(frame: CGRect(x: 0, y: 200, width: self.view.frame.width, height: 40));
+        label.text = "Sample View"
+        label.textAlignment = .center
+        label.font = UIFont.systemFont(ofSize: 30)
+        return label;
+    }()
+    
+    
 
     override func viewDidLoad() {
+        custom.vc = self;
+        view.addSubview(sample)
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        view.backgroundColor = .white
+        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(doSomething)))
+    }
+    
+    func doSomething(){
+        custom.addmenu()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+   
+    
+    func clicked(button:String){
+        
+        print("clicked \(button)")
     }
-
 
 }
 

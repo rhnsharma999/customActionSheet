@@ -14,6 +14,8 @@
 		DE1394DA1E92ACF30058BFEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE1394D81E92ACF30058BFEE /* LaunchScreen.storyboard */; };
 		DE1394E51E92ACF30058BFEE /* Custom_Action_SheetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1394E41E92ACF30058BFEE /* Custom_Action_SheetTests.swift */; };
 		DE1394F01E92ACF30058BFEE /* Custom_Action_SheetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1394EF1E92ACF30058BFEE /* Custom_Action_SheetUITests.swift */; };
+		DE1394FF1E92AD3A0058BFEE /* CustomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1394FE1E92AD3A0058BFEE /* CustomSheet.swift */; };
+		DE1395011E92AD510058BFEE /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1395001E92AD510058BFEE /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		DE1394EB1E92ACF30058BFEE /* Custom Action SheetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Custom Action SheetUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE1394EF1E92ACF30058BFEE /* Custom_Action_SheetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom_Action_SheetUITests.swift; sourceTree = "<group>"; };
 		DE1394F11E92ACF30058BFEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE1394FE1E92AD3A0058BFEE /* CustomSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSheet.swift; sourceTree = "<group>"; };
+		DE1395001E92AD510058BFEE /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				DE1394CE1E92ACF30058BFEE /* Custom Action Sheet */,
+				DE1394FD1E92AD210058BFEE /* custom action sheet files */,
 				DE1394E31E92ACF30058BFEE /* Custom Action SheetTests */,
 				DE1394EE1E92ACF30058BFEE /* Custom Action SheetUITests */,
 				DE1394CD1E92ACF30058BFEE /* Products */,
@@ -123,6 +128,15 @@
 				DE1394F11E92ACF30058BFEE /* Info.plist */,
 			);
 			path = "Custom Action SheetUITests";
+			sourceTree = "<group>";
+		};
+		DE1394FD1E92AD210058BFEE /* custom action sheet files */ = {
+			isa = PBXGroup;
+			children = (
+				DE1394FE1E92AD3A0058BFEE /* CustomSheet.swift */,
+				DE1395001E92AD510058BFEE /* CustomCell.swift */,
+			);
+			name = "custom action sheet files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +278,8 @@
 			files = (
 				DE1394D21E92ACF30058BFEE /* ViewController.swift in Sources */,
 				DE1394D01E92ACF30058BFEE /* AppDelegate.swift in Sources */,
+				DE1395011E92AD510058BFEE /* CustomCell.swift in Sources */,
+				DE1394FF1E92AD3A0058BFEE /* CustomSheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
